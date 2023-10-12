@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+<title>NFTs</title>
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<style>
+ #newFont{
+    font-family: 'Jura', sans-serif;
+    font-weight: 600;
+ }
+
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #cb5cff #d1d1d1;
+  }
+
+  
+  *::-webkit-scrollbar {
+    width: 14px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #d1d1d1;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #cb5cff;
+    border-radius: 10px;
+    border: 1px none #ffffff;
+  }
+</style>
+
+<body class="bg-[#160e2a]">
+
+<!-- header -->
+<header class="w-[100%] relative">
+    
+    <svg class="-z-20 w-full absolute top-10" xmlns="http://www.w3.org/2000/svg" width="1500" height="1000" viewBox="0 0 1500 500" preserveAspectRatio="none">
+        <defs>
+            <linearGradient id="myGradient" gradientTransform="rotate(45)">
+              <stop offset="5%"  stop-color="#160E2A" />
+              <stop offset="95%" stop-color="#1F1539" />
+            </linearGradient>
+          </defs>
+          <path d="M 0,0
+                 L 0,250
+                 Q 750,500 1500,250
+                 L 1500, 0
+                 Z" fill="url('#myGradient')" />
+        </svg>
+    
+    <!-- nav -->
+    <nav class="w-[100%] flex justify-between items-center text-white  py-4 px-9 fixed z-50 top-0 border-b-[1px] backdrop-blur-md">
+        <img class="w-8 h-8" src="assets/logo.png">
+        <div class="md:flex hidden gap-8 font-thin">
+            <a class="border-0 hover:font-semibold" href="#">MARKETPLACE</a>
+            <a class="border-0 hover:font-semibold" href="#">ABOUT</a>
+            <a class="border-0 hover:font-semibold" href="#">RESOURCES</a>
+            <a class="border-0 hover:font-semibold" href="#">FAQ</a>
+        </div>
+        <div class="flex items-center justify-center gap-5">
+            <div class="rounded-md bg-gradient-to-r from-cyan-500 to-pink-700 p-[1px] backdrop-blur-md">
+                <button class="bg-black rounded-md px-5 py-[2px] text-[14px] hover:shadow-[1px_2px_20px_8px_rgb(70,28,155)] backdrop-blur-md">Log In</button>
+            </div>
+            <div class="rounded-md bg-gradient-to-r from-cyan-500 to-pink-700 p-[1px] backdrop-blur-md">
+                <button class="bg-black rounded-md px-4 py-[2px] text-[14px] hover:shadow-[1px_2px_20px_8px_rgb(70,28,155)] backdrop-blur-md">Sign Up</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Gradient bg -->
+    <div class="fixed w-[904px] h-[845.26px] -top-[250px] -left-[100px] -z-20">
+        <div class="absolute w-[450.25px] h-[587.07px] bg-gradient-to-b from-[#03FB75] to-[#06FFF0] blur-[176.733px] rotate-[76.66deg] left-[51px] top-[70px]"></div>
+        <div class="absolute w-[346px] h-[346px] bg-gradient-to-b from-[#2603FB] to-[#a006ff] rotate-[-22.54deg] blur-[120px] left-[202px] top-[420px] "></div>
+        <div class="absolute w-[433px] h-[636px] bg-gradient-to-br from-[#FB03F5] to-[#AA9CFF] blur-[94.7075px] rotate-[76.66deg] -top-[20px]"></div>
+    </div>
+
+    <!-- main hero -->
+    <section class="p-2 md:px-14 flex flex-col md:flex-row justify-between items-center md:mt-2">
+
+        <!-- Left side -->
+        <div class="mt-20 md:w-1/2 flex-col md:space-y-20">
+            <h1 id="newFont" class=" bg-gradient-to-t from-[#9E89FF] to-[#E6B9FF] font-bold text-4xl md:text-6xl text-center md:text-left bg-clip-text">
+                <span class="text-transparent">
+                    Keep Calm & <br>
+                    Collect Your NFTs.
+                </span>
+            </h1>
+            <p  class="mt-10 text-white font-mono  text-center md:text-left  ">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. A ea esse quo rem at illo recusandae ipsa atque perspiciatis unde et nihil enim magni in provident, inventore eius quisquam consequatur maxime voluptates doloribus
+            </p>
+            <div class="flex items-center justify-center md:justify-normal gap-5 my-10 font-mono ">
+                <div class=" bg-gradient-to-t from-[#9E89FF] to-[#E6B9FF] bg-clip-text">
+                    <i class="text-transparent text-5xl fa-solid fa-play"></i>
+                </div>
+                <div class="flex flex-col text-white w-1/2 leading-tight">
+                    <p class="font-bold">Let's Get Started</p>
+                    <p class="font-light">watch this quick demo video to see how to get started</p>
+                </div>
+            </div>
+           
+        </div>
+        <!-- Image side -->
+        <img class="md:w-1/3 w-[70%]" src="assets/image.png" alt="">
+        
+    </section>
+</header>
+
+<!-- MAP section -->
+<section class="py-16 w-full md:mt-24">
+    <div class="flex items-center justify-center mb-2 ">
+        <div class="w-10 h-10 md:w-20 md:h-20 rounded-full bg-gradient-to-b from-[#6147F8] to-[#BC5EFF]"></div>
+        <h1 class="text-white md:text-[28px] -ml-8 font-bold">Top Creators</h1>
+    </div>
+    <div class="relative">
+        <img class="w-full filter brightness-[1.3] contrast-[1.6] saturate-[1.5] " src="assets/map.png" alt="">
+        <img class="absolute hidden xl:block top-12 left-44" src="assets/person.png" alt="">
+        <img class="absolute hidden xl:block top-[200px] left-[404px]" src="assets/person.png" alt="">
+        <img class="absolute hidden xl:block top-[198px] right-[470px]" src="assets/person.png" alt="">
+        <img class="absolute hidden xl:block top-[95px] right-[597px]" src="assets/person.png" alt="">
+    </div>
+</section>
+
+<!-- NFTs -->
+<section class="w-full mt-10 py-10 md:px-2 font-mono">
+    <div class="flex flex-col lg:flex-row items-center justify-around">
+
+    <!-- grid side -->
+    <div class="w-1/2 grid md:grid-cols-2 text-white place-items-center">
+        <div class="relative border-2 w-[200px] h-[200px] flex items-center justify-center">
+            <img class="ml-[120px] mb-[120px] bg-gradient-to-br from-[#1524AC] to-[#D3299C] py-7 px-10" src="assets/image 1.png" alt="">
+            <p class="absolute -z-10 -rotate-90 lg:rotate-0 -left-5 md:bottom-10 md:-left-4 lg:bottom-3 lg:left-4 leading-tight">Ancient Ones <br><i class="mr-1 fa-brands fa-ethereum"></i> 5.0 eth</p>
+        </div>
+        <div class="relative  border-2 lg:mt-32 w-[200px] h-[200px] flex items-center justify-center">
+            <img class="ml-[120px] mb-[120px]" src="assets/merlin.png" alt="">
+            <p class="absolute z-10 -rotate-90 lg:rotate-0 -left-5 md:bottom-10 md:-left-4 lg:bottom-3 lg:left-4 leading-tight">Lost in Space <br><i class="mr-1 fa-brands fa-ethereum"></i> 5.0 eth</p>
+        </div>
+
+        <div class="relative border-2 w-[200px] h-[200px] flex items-center justify-center">
+            <img class="ml-[120px] mb-[120px] bg-gray-900 w-full p-8" src="assets/Avatar 1.png" alt="">
+            <p class="absolute -z-10 -rotate-90 md:rotate-0 -left-5 md:bottom-3 md:left-4    leading-tight">God of War<br><i class="mr-1 fa-brands fa-ethereum"></i> 7.0 eth</p>
+        </div>
+        <div class="relative border-2 lg:mt-24 w-[200px] h-[200px] flex items-center justify-center">
+            <img class="ml-[120px] mb-[120px] " src="assets/Avatar2.png" alt="">
+            <p class="absolute -z-10 -rotate-90 md:rotate-0 -left-5 md:bottom-3 md:left-4 leading-tight">The Watchers<br><i class="mr-1 fa-brands fa-ethereum"></i> 3.2 eth</p>
+        </div>
+    </div>
+    <!-- text side -->
+    <div class="text-white lg:w-1/3 p-4 mt-5 space-y-8 lg:space-y-12 lg:my-auto">
+        <div class="flex items-center">
+            <div class="w-10 h-10 md:w-20 md:h-20 rounded-full bg-gradient-to-b from-[#6147F8] to-[#BC5EFF]"></div>
+            <h1 class="md:text-[28px] -ml-8">Latest NFT Collections
+            </h1>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quisquam reprehenderit atque dignissimos reiciendis est maxime eligendi consequatur illo, voluptas error quibusdam nobis.</p>
+        <div class="rounded-md bg-gradient-to-r from-cyan-500 to-pink-700 p-[1px] inline-block ">
+            <button class="hover:shadow-[1px_2px_20px_8px_rgb(70,28,155)] bg-black rounded-md px-4 py-[2px] text-[14px]">View All Collections</button>
+        </div>
+    </div>
+    </div>
+</section>
+
+<!-- Features -->
+<section class="p-[1px] pl-0 md:my-16 rounded-r-full w-[80%] bg-gradient-to-b from-cyan-500 to-pink-700">
+
+    <!-- content area -->
+    <div class="py-10 flex flex-col lg:flex-row gap-8 lg:gap-32 bg-black rounded-r-full">
+        <!-- left side text -->
+        <div class="lg:w-1/3 space-y-10 py-2 pl-8 self-center">
+            <div class="flex items-center">
+                <div class="w-10 h-10 md:w-20 md:h-20 rounded-full bg-gradient-to-b from-[#6147F8] to-[#BC5EFF]"></div>
+                <h1 class="md:text-[28px] text-2xl -ml-8 text-white">Why Choose Us?</h1>
+            </div>
+            <p class="text-white w-4/5 p-2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam orci lacus, tempor nec accumsan ac, luctusut   sem. Mauris pretium lacus eget vulputate rhoncus. Vivamus egestas, orci eu lobortis pulvinar.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam orci lacus, tempor nec accumsan ac, luctus ut sem.
+            </p>
+        </div>
+        <!-- right side grid -->
+        <div class="grid grid-cols-2 text-white gap-6 lg:gap-10 px-5 md:px-0">
+                
+               <div class="relative">
+                    <div class="bg-[#FFB413] h-16 w-[90px] blur-xl -top-5 rounded-full left-5 b absolute"></div>
+                    <div class="w-36 h-28 md:h-40  md:w-48 backdrop-blur-lg border-[#646262] border-b-[0.5px] border-r-[0.5px] rounded-lg p-5 flex flex-col items-center justify-center">
+                        <img class="" src="assets/simple-icons_marketo.png">
+                        <p>Marketplace</p>
+                    </div>
+               </div>
+               <div class="relative">
+                    <div class="bg-[#FF5A13] h-12 w-[80px] blur-xl bottom-5 rounded-full right-20 b absolute"></div>
+                    <div class="w-36 h-28 md:h-40  md:w-48 backdrop-blur-lg border-[#646262] border-b-[0.5px] border-r-[0.5px] rounded-lg p-5 flex flex-col items-center justify-center">
+                        <img src="assets/Vector.png"> 
+                        <p>Money Protection</p>
+                    </div>
+                </div>
+                <div class="relative md:ml-10">
+                    <div class="bg-[#2FB8EB] h-12 w-[50px] blur-xl -top-3 rounded-full left-8 b absolute"></div>
+                    <div class="w-36 h-28 md:h-40  md:w-48 backdrop-blur-lg border-[#646262] border-b-[0.5px] border-r-[0.5px] rounded-lg p-5 flex flex-col items-center justify-center">
+                        <img src="assets/Vector2.png">
+                        <p>Data Protection</p>
+                    </div>
+                </div>
+                <div class="relative md:ml-10">
+                    <div class="bg-[#187888] h-16 w-[90px] blur-xl bottom-5 rounded-full right-5 b absolute"></div>
+                    <div class="w-36 h-28 md:h-40  md:w-48 backdrop-blur-lg border-[#646262] border-b-[0.5px] border-r-[0.5px] rounded-lg p-5 flex flex-col items-center justify-center">
+                        <img src="assets/healthicons.png">
+                        <p>Fast & Secure</p>
+                    </div>
+                </div>
+        </div>
+        <!-- end of right side grid -->
+    </div>
+</section>
+
+<!-- Guide section -->
+<section class="mt-20 w-[100%] py-4 font-mono ">
+
+    <div class="flex items-center justify-center mb-10">
+        <div class="w-14 h-14 md:w-24 md:h-24 rounded-full bg-gradient-to-b from-[#6147F8] to-[#BC5EFF]"></div>
+        <h1 class="text-[30px] text-2xl -ml-8 text-white">Create and Sell Your NFTs</h1>
+    </div>
+
+    <div class="text-white py-10 grid grid-cols-2 gap-3 sm:gap-0 place-items-center lg:flex lg:justify-around">
+
+        <div class="w-[180px] sm:w-[250px] p-2 md:p-4 flex flex-col items-center justify-center gap-5">
+            <img src="assets/wallet-one.png">
+            <h1 class="mb-2 font-bold text-[13px] md:text-lg">Set up your wallet</h1>
+            <p class="md:pl-2 text-sm md:text-base  md:text-gray-400">
+                Once you've set up your wallet of choice, connect it to OpenSea by clicking the wallet icon in the top right corner. Learn about the wallets we support.
+            </p>
+        </div>
+        <div class="w-[180px] sm:w-[250px] p-2 md:p-4 flex flex-col items-center justify-center gap-5">
+            <img src="assets/triangle-round-rectangle.svg" alt="">
+            <h1 class="mb-2 font-bold text-[13px] md:text-lg">Create your collection</h1>
+            <p class="md:pl-2 text-sm md:text-base  md:text-gray-400">
+                Click My Collections and set up your collection. Add social links, a description, profile & banner images, and set a secondary sales fee.
+            </p>
+        </div>
+        <div class="w-[180px] sm:w-[250px] p-2 md:p-4 flex flex-col items-center justify-center gap-5">
+            <img class="mt-3 sm:mt-0" src="assets/picture.png">
+            <h1 class="font-bold text-[13px] md:text-lg">Add your NFTs</h1>
+            <p class="md:pl-2 text-sm md:text-base  md:text-gray-400">
+                Upload your work (image, video, audio, or 3D art), add a title and description, and customize your NFTs with properties, stats, and unlockable content.
+            </p>
+        </div>
+        <div class="w-[180px] sm:w-[250px] p-2 md:p-4 flex flex-col items-center justify-center gap-5">
+            <img src="assets/shopping-bag.svg">
+            <h1 class="mb-2 font-bold text-[13px] md:text-lg">List them for sale</h1>
+            <p class="md:pl-2 text-sm md:text-base md:text-gray-400">
+                Choose between auctions, fixed-price listings, and declining-price listings. You choose how you want to sell your NFTs, and we help you sell them!
+            </p>
+        </div>
+
+    </div>
+    <img src="ellipse.svg">
+</section>
+
+<!-- subscribe area -->
+<section class="flex flex-col items-center justify-center p-4 my-16 gap-8 font-mono">
+    <h1 class="capitalize text-white text-4xl font-semibold text-center md:text-left">ready for next NFT drop?</h1>
+    <input type="email" class="px-3 py-2 w-[300px] bg-black text-white rounded-md text-center" placeholder="Enter Your Email">
+    <div class="bg-gradient-to-r from-cyan-500 to bg-pink-500 p-[1px]  rounded-lg">
+        <button class="bg-black text-white py-2 px-5 w-[170px] hover:shadow-[1px_2px_20px_8px_rgb(70,28,155)]  rounded-lg">Send Email</button>
+    </div>
+</section>
+
+<!-- footer -->
+<footer class="bg-gradient-to-r w-full from-cyan-500 to bg-pink-500 pt-[1px]">
+    <div class="bg-[#0d0819] text-white pt-2 h-full">
+
+        <!-- Flex this -->
+        <div class="flex flex-col gap-10 md:gap-0 md:flex-row justify-around mx-auto p-3 w-full max-w-[1200px] items-center md:items-start">
+            <!-- left side -->
+            <div class="p-2 pt-4 self-start sm:self-auto">
+                <img  class="w-[80px] px-2" src="assets/logo.png">
+                <p class="mt-6 px-2">
+                    Amazing NFTs marketplace, Authentic and unique <br>
+                    digital creation.
+                </p>
+                <div class="flex gap-5 items-center mt-16">
+                    <img class="border-[1px] border-[#5f5da5] w-11 h-11  rounded-full p-2" src="assets/whatsapp.png">
+                    <img class="border-[1px] border-[#5f5da5] w-10 h-10  rounded-full p-2" src="assets/fb.png">
+                    <img class="border-[1px] border-[#5f5da5]  rounded-full p-2" src="assets/insta.png">
+                    <img class="border-[1px] border-[#5f5da5]  rounded-full p-2" src="assets/yt.png">
+                </div>
+            </div>
+
+            <!-- right side -->
+            <div class="grid grid-cols-2 grid-rows-2 sm:grid-cols-3 sm:grid-rows-none gap-16 md:place-items-center p-2 self-start sm:self-auto">
+
+                <div class="flex flex-col justify-center gap-3">
+                    <h2 class="mb-4 text-2xl font-bold">Marketplace</h2>
+                    <a class="text-gray-400 hover:text-white" href="#">Explore</a>
+                    <a class="text-gray-400 hover:text-white" href="#">NFTs</a>
+                    <a class="text-gray-400 hover:text-white" href="#">Collectibles</a>
+                    <a class="text-gray-400 hover:text-white" href="#">Virtual Reality</a>
+                </div>
+                <div class="flex flex-col justify-center gap-3">
+                    <h2 class="mb-4 text-2xl font-bold">Resources</h2>
+                    <a class="text-gray-400 hover:text-white" href="#">Help Center</a>
+                    <a class="text-gray-400 hover:text-white" href="#">Partners</a>
+                    <a class="text-gray-400 hover:text-white" href="#">Blog</a>
+                    <a class="text-gray-400 hover:text-white" href="#">Newsletter</a>
+                </div>
+                <div class="flex flex-col justify-center gap-3">
+                    <h2 class="mb-4 text-2xl font-bold">Company</h2>
+                    <a class="text-gray-400 hover:text-white" href="#">About Us</a>
+                    <a class="text-gray-400 hover:text-white" href="#">Careers</a>
+                    <a class="text-gray-400 hover:text-white" href="#">Support</a>
+                    <a class="text-gray-400 hover:text-white" href="#">Terms</a>
+                </div>
+            </div>
+
+        </div>
+        <div class="w-full sm:max-w-[1200px] sm:mx-auto flex justify-around items-center sm:px-10 p-2 py-2">
+            <p class="text-xs text-gray-400 sm:text-base w-1/2 sm:w-1/3">Copyright 2022 sapphire, All right reserved.</p>
+            <div class="flex flex-col sm:flex-row md:gap-6">
+                <a class="text-gray-400 text-xs sm:text-base" href="#">Privacy Policy</a>
+                <a class="text-gray-400 text-xs sm:text-base" href="#">Terms & Condtions</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
